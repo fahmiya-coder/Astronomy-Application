@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer base {
+  :root {
+    --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: #07090E;
+    color: #F1F5F9;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Precision KaTeX styling for dark obsidian background */
+.katex {
+  font-size: 1.04em;
+  color: #E2E8F0;
+}
+
+.katex-display {
+  margin: 0.75rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+/* Calibrated range slider styling */
+input[type="range"].astro-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #1E293B;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"].astro-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  background: #06B6D4;
+  border: 1px solid #CFFAFE;
+  cursor: pointer;
+}
+
+input[type="range"].astro-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  background: #06B6D4;
+  border: 1px solid #CFFAFE;
+  cursor: pointer;
+}

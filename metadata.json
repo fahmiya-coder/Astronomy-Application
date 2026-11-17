@@ -1,0 +1,6 @@
+{
+  "name": "Stellar Observatory",
+  "description": "Interactive stellar astronomy and astrophysics research platform covering stellar formation, nuclear physics, Hertzsprung-Russell modeling, famous star dossiers, and computational research.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
